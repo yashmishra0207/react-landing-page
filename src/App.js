@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Navigator from "./components/Navbar";
-import Corousel from "./components/carousel";
+import Corousel from "./components/Corousel";
 
 class App extends Component {
   state = {

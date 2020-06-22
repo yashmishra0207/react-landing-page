@@ -31,15 +31,15 @@ function Navigator(props) {
         </Nav>
         <Nav>
           <Nav.Link href="">
-            <i className="fa fa-cart-arrow-down" style={{ fontSize: "24px" }} />{" "}
+            <i className="fa fa-cart-arrow-down" style={{ fontSize: "22px" }} />{" "}
             Cart{" "}
             <span className="badge badge-pill badge-danger">
               {props.TotalItems}
             </span>
           </Nav.Link>
           <Nav.Link href="">
+            <i className="fa fa-user-circle-o" style={{ fontSize: "22px" }} />
             {props.UserName}{" "}
-            <i className="fa fa-user-circle-o" style={{ fontSize: "24px" }} />
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
