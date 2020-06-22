@@ -8,8 +8,19 @@ class App extends Component {
     totalItems: "5",
     userName: "Anand",
     images: [
-      'technology', 'tech', 'server'
-    ]
+      "technology",
+      "tech",
+      "server",
+      "app",
+      "business",
+      "virtual reality",
+    ],
+    services: [
+      { image: "https://images.unsplash.com/photo-1553390774-b4822481c894?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=683&q=80", text: "Full-stack Development" },
+      { image: "", text: "Mobile App Development" },
+      { image: "", text: "Digital Marketing" },
+      { image: "", text: "Product Design" }
+    ],
   };
 
   render() {
@@ -22,7 +33,7 @@ class App extends Component {
         <Slider
           images={this.state.images}
           ScreenWidth={window.innerWidth}
-          ScreenHeight={window.innerHeight/2}
+          ScreenHeight={window.innerHeight / 2}
         />
       </React.Fragment>
     );
