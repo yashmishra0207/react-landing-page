@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 import Navigator from "./components/Navbar";
-import Corousel from "./components/Corousel";
+import Slider from "./components/Corousel";
 
 class App extends Component {
   state = {
     totalItems: "5",
     userName: "Anand",
-    screenWidth: window.innerWidth,
-    screenHeight: window.innerHeight/2,
+    images: [
+      'technology', 'tech', 'server'
+    ]
   };
 
   render() {
@@ -18,9 +19,10 @@ class App extends Component {
           TotalItems={this.state.totalItems}
           UserName={this.state.userName}
         />
-        <Corousel
-          ScreenWidth={this.state.screenWidth}
-          ScreenHeight={this.state.screenHeight}
+        <Slider
+          images={this.state.images}
+          ScreenWidth={window.innerWidth}
+          ScreenHeight={window.innerHeight/2}
         />
       </React.Fragment>
     );
