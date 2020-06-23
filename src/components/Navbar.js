@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 
 function Navigator(props) {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed='top' style={{boxShadow: '0 0 20px gray'}}>
       <Navbar.Brand href="#home">
         <img
           style={{ maxWidth: "130px" }}

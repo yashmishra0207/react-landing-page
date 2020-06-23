@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 function Slider(props) {
   return (
-    <Carousel>
+    <Carousel style={{marginTop:'50px'}}>
       {props.images.map((item, index) => (
         <Carousel.Item key={index}>
           <img
