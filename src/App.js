@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Navigator from "./components/Navbar";
 import Slider from "./components/Corousel";
-import Services from "./components/Services";
+import Categories from "./components/Categories";
 
 class App extends Component {
   state = {
@@ -16,7 +16,7 @@ class App extends Component {
       "business",
       "virtual reality",
     ],
-    services: [
+    categories: [
       {
         icon: "fa fa-globe",
         image:
@@ -48,8 +48,26 @@ class App extends Component {
         icon: "fa fa-paint-brush",
         image:
           "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        theme: "rgb(0,128,255)",
+        theme: "#D500F9",
         title: "Product Design",
+        desc:
+          "Our customer-centric approach where our Visual UI is supported by UX strategy achieves best in Industry results that are not only visually appealing but also uniquely express your brand and drive customer engagement. Putting your customers at the heart of the design process results in products they will turn into again and again.",
+      },
+      {
+        icon: "fa fa-cloud",
+        image:
+          "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        theme: "rgb(0,128,255)",
+        title: "Cloud Computing",
+        desc:
+          "Our customer-centric approach where our Visual UI is supported by UX strategy achieves best in Industry results that are not only visually appealing but also uniquely express your brand and drive customer engagement. Putting your customers at the heart of the design process results in products they will turn into again and again.",
+      },
+      {
+        icon: "fa fa-microchip",
+        image:
+          "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        theme: "#ff1744",
+        title: "Internet of things",
         desc:
           "Our customer-centric approach where our Visual UI is supported by UX strategy achieves best in Industry results that are not only visually appealing but also uniquely express your brand and drive customer engagement. Putting your customers at the heart of the design process results in products they will turn into again and again.",
       },
@@ -68,7 +86,7 @@ class App extends Component {
           ScreenWidth={window.innerWidth}
           ScreenHeight={window.innerHeight / 2}
         />
-        <Services services={this.state.services} />
+        <Categories categories={this.state.categories} />
       </React.Fragment>
     );
   }

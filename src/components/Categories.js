@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-function Services(props) {
+function Categories(props) {
   const card = (icon, image, theme, title, desc, idx) => (
     <div className="rainbow my-3">
       <Card
@@ -72,6 +72,7 @@ function Services(props) {
 
   return (
     <div
+      className="pb-5"
       style={{
         backgroundColor: "#2c3e50",
         backgroundBlendMode: "darken",
@@ -88,12 +89,12 @@ function Services(props) {
             borderRadius:"50px 50px"
           }}
         >
-          SERVICES
+          CATEGORIES
         </span>
       </div>
       <Container>
         <Row>
-          {props.services.map((service, index) =>
+          {props.categories.map((service, index) =>
             card(
               service.icon,
               service.image,
@@ -108,4 +109,4 @@ function Services(props) {
     </div>
   );
 }
-export default Services;
+export default Categories;
