@@ -8,7 +8,6 @@ function Categories(props) {
     <div className="rainbow my-3" key={idx}>
       <Card
         className="mx-auto"
-        key={idx}
         style={{
           width: "18rem",
           border: "0px solid " + theme,
