@@ -16,6 +16,28 @@ class App extends Component {
       "business",
       "virtual reality",
     ],
+    services: [
+      {
+        icon: "fa fa-code-fork fa-github",
+        theme: "",
+        title: "Software"
+      },
+      {
+        icon: "fa fa-bullhorn fa-feed fa-line-chart",
+        theme: "",
+        title: "Marketing"
+      },
+      {
+        icon: "fa fa-soundcloud fa-database",
+        theme: "",
+        title: "Cloud"
+      },
+      {
+        icon: "fa fa-lightbulb-o",
+        theme: "",
+        title: "IOT"
+      },
+    ],
     categories: [
       {
         icon: "fa fa-globe",
@@ -60,7 +82,7 @@ class App extends Component {
         theme: "rgb(0,128,255)",
         title: "Cloud Computing",
         desc:
-          "Our customer-centric approach where our Visual UI is supported by UX strategy achieves best in Industry results that are not only visually appealing but also uniquely express your brand and drive customer engagement. Putting your customers at the heart of the design process results in products they will turn into again and again.",
+          "Cloud computing services are changing how businesses and public institutions use information technology. Today cloud services are available to meet most any IT need. As there's great variety among cloud computing services, and we stive to provide almost each of them at not only affordable prices but also ensure it to be the best-in-class.",
       },
       {
         icon: "fa fa-microchip",
@@ -69,7 +91,7 @@ class App extends Component {
         theme: "#009688",
         title: "Internet of things",
         desc:
-          "Our customer-centric approach where our Visual UI is supported by UX strategy achieves best in Industry results that are not only visually appealing but also uniquely express your brand and drive customer engagement. Putting your customers at the heart of the design process results in products they will turn into again and again.",
+          "Our Approach is structured around the emergence of an IoT ecosystem which helps in connections of things, data, process and people. A structured approach is taken to understand your business needs & offer quick ramp-up to discover your IoT needs & solutions, accelerating your time to market with low risk and zero lock-in.",
       },
     ],
   };
