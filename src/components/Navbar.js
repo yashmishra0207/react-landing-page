@@ -15,16 +15,16 @@ function Navigator(props) {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="m-auto">
-          <Nav.Link className="mx-2" href="#features">
-            <i className="fa fa-home"></i> Home
+          <Nav.Link className="NavbarCustomElement mx-2" href="#features">
+            <i className="fa fa-home" ></i> Home
           </Nav.Link>
-          <Nav.Link className="mx-2" href="#pricing">
+          <Nav.Link className="NavbarCustomElement mx-2" href="#pricing">
             <i className="fa fa-shopping-basket"></i> Shop
           </Nav.Link>
-          <Nav.Link className="mx-2" href="#pricing">
+          <Nav.Link className="NavbarCustomElement mx-2" href="#pricing">
             <i className="fa fa-newspaper-o"></i> Blog
           </Nav.Link>
-          <Nav.Link className="mx-2" href="#pricing">
+          <Nav.Link className="NavbarCustomElement mx-2" href="#pricing">
             <i className="fa fa-address-card"></i> Contact Us
           </Nav.Link>
         </Nav>

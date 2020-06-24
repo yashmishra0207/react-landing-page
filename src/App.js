@@ -5,6 +5,7 @@ import Slider from "./components/Corousel";
 import Services from "./components/Services";
 import Categories from "./components/Categories";
 import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 class App extends Component {
   state = {
@@ -22,22 +23,126 @@ class App extends Component {
       {
         icon: "fa fa-code",
         title: "Software",
-        desc: [<div key="1"><i className="fa fa-laptop" style={{fontSize:'24px'}}/><br/>Web Apps<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-paint-brush" style={{fontSize:'26px'}}/><br/>Graphic Designing<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-mobile" style={{fontSize:'26px'}}/><br/>Mobile Apps</div>]
+        desc: [
+          <div key="1">
+            <i className="fa fa-laptop" style={{ fontSize: "24px" }} />
+            <br />
+            Web Apps
+            <hr
+              style={{
+                height: "0.5px",
+                backgroundColor: "whitesmoke",
+                border: "none",
+              }}
+            />
+            <i className="fa fa-paint-brush" style={{ fontSize: "26px" }} />
+            <br />
+            Graphic Designing
+            <hr
+              style={{
+                height: "0.5px",
+                backgroundColor: "whitesmoke",
+                border: "none",
+              }}
+            />
+            <i className="fa fa-mobile" style={{ fontSize: "26px" }} />
+            <br />
+            Mobile Apps
+          </div>,
+        ],
       },
       {
         icon: "fa fa-line-chart",
         title: "Marketing",
-        desc: [<div key="1"><i className="fa fa-search" style={{fontSize:'22px'}}/><br/>S.E.O.<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-envelope" style={{fontSize:'20px'}}/><br/>Email Marketting<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-bar-chart" style={{fontSize:'26px'}}/><br/>Analytics</div>]
+        desc: [
+          <div key="1">
+            <i className="fa fa-search" style={{ fontSize: "22px" }} />
+            <br />
+            S.E.O.
+            <hr
+              style={{
+                height: "0.5px",
+                backgroundColor: "whitesmoke",
+                border: "none",
+              }}
+            />
+            <i className="fa fa-envelope" style={{ fontSize: "20px" }} />
+            <br />
+            Email Marketting
+            <hr
+              style={{
+                height: "0.5px",
+                backgroundColor: "whitesmoke",
+                border: "none",
+              }}
+            />
+            <i className="fa fa-bar-chart" style={{ fontSize: "26px" }} />
+            <br />
+            Analytics
+          </div>,
+        ],
       },
       {
         icon: "fa fa-soundcloud",
         title: "Cloud",
-        desc: [<div key="1"><i className="fa fa-server" style={{fontSize:'22px'}}/><br/>Server<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-database" style={{fontSize:'20px'}}/><br/>Database<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-hdd-o" style={{fontSize:'26px'}}/><br/>Storage</div>]
+        desc: [
+          <div key="1">
+            <i className="fa fa-server" style={{ fontSize: "22px" }} />
+            <br />
+            Server
+            <hr
+              style={{
+                height: "0.5px",
+                backgroundColor: "whitesmoke",
+                border: "none",
+              }}
+            />
+            <i className="fa fa-database" style={{ fontSize: "20px" }} />
+            <br />
+            Database
+            <hr
+              style={{
+                height: "0.5px",
+                backgroundColor: "whitesmoke",
+                border: "none",
+              }}
+            />
+            <i className="fa fa-hdd-o" style={{ fontSize: "26px" }} />
+            <br />
+            Storage
+          </div>,
+        ],
       },
       {
         icon: "fa fa-lightbulb-o fa-microchip",
         title: "IOT",
-        desc: [<div key="1"><i className="fa fa-shield" style={{fontSize:'22px'}}/><br/>Security<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-medkit" style={{fontSize:'20px'}}/><br/>Health Care<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-car" style={{fontSize:'24px'}}/><br/>Automotive</div>]
+        desc: [
+          <div key="1">
+            <i className="fa fa-shield" style={{ fontSize: "22px" }} />
+            <br />
+            Security
+            <hr
+              style={{
+                height: "0.5px",
+                backgroundColor: "whitesmoke",
+                border: "none",
+              }}
+            />
+            <i className="fa fa-medkit" style={{ fontSize: "20px" }} />
+            <br />
+            Health Care
+            <hr
+              style={{
+                height: "0.5px",
+                backgroundColor: "whitesmoke",
+                border: "none",
+              }}
+            />
+            <i className="fa fa-car" style={{ fontSize: "24px" }} />
+            <br />
+            Automotive
+          </div>,
+        ],
       },
     ],
     categories: [
@@ -55,7 +160,7 @@ class App extends Component {
         image:
           "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         theme: "rgb(20, 182, 101)",
-          title: "Mobile App Development",
+        title: "Mobile App Development",
         desc:
           "Enterprise-grade, custom app development across multiple platforms. From e-commerce apps to Live streaming apps, we cover them all. Our expertise in flutter and react-native helps us deliver the fastest apps that never break. We cover Android and Ios Development along with Backend Engineering and App store optimization.",
       },
@@ -100,22 +205,31 @@ class App extends Component {
       {
         userImg: "/avatars/avatar-1.png",
         userName: "Peter Parker",
-        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor, tellus sit amet eleifend lacinia, lorem quam vestibulum sem, non eleifend odio odio ac risus. Mauris efficitur gravida purus, nec tristique augue sagittis tincidunt. Ut neque elit, elementum at venenatis. ",
-        date: "10 August 2019"
+        review:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor, tellus sit amet eleifend lacinia, lorem quam vestibulum sem, non eleifend odio odio ac risus. Mauris efficitur gravida purus, nec tristique augue sagittis tincidunt. Ut neque elit, elementum at venenatis. ",
+        date: "10 August 2019",
       },
       {
         userImg: "/avatars/avatar-2.png",
         userName: "Arthur Curry",
-        review: "Spicy jalapeno bacon ipsum dolor amet jerky venison salami pork loin pancetta turducken cupim buffalo pork biltong beef ribeye kevin. Fatback tri-tip beef ribs, picanha beef short loin filet mignon swine andouille jowl capicola shoulder. Pork chop pancetta beef ribs.",
-        date: "29 January 2019"
+        review:
+          "Spicy jalapeno bacon ipsum dolor amet jerky venison salami pork loin pancetta turducken cupim buffalo pork biltong beef ribeye kevin. Fatback tri-tip beef ribs, picanha beef short loin filet mignon swine andouille jowl capicola shoulder. Pork chop pancetta beef ribs.",
+        date: "29 January 2019",
       },
       {
         userImg: "/avatars/avatar-4.png",
         userName: "Bruse Banner",
-        review: "Hase mice run in circles yet mark territory sleep on keyboard. Claw drapes. Intently sniff hand burrow under covers for behind the couch but inspect anything brought into the house. Intently stare at the same spot flop over or give attitude or hide when guests come over yet hide when.",
-        date: "02 July 2019"
+        review:
+          "Hase mice run in circles yet mark territory sleep on keyboard. Claw drapes. Intently sniff hand burrow under covers for behind the couch but inspect anything brought into the house. Intently stare at the same spot flop over or give attitude or hide when guests come over yet hide when.",
+        date: "02 July 2019",
       },
     ],
+    footer: {
+      address:
+        "Frank G. Wells Building 2nd Floor 500 South Buena Vista Street, Burbank, California , United States",
+      socialMedia: [{ icon: "fa fa-google-plus-square", link: "https://aboutme.google.com" }, { icon: "fa fa-twitter-square", link: "https://twitter.com" },{ icon: "fa fa-linkedin-square", link: "https://linkedin.com" }, { icon: "fa fa-facebook-square", link: "https://facebook.com" }, { icon: "fa fa-instagram", link: "https://instagram.com" }],
+      copyright: [<i className="fa fa-copyright" style={{fontSize:"0.75em"}}/>, " 2019 HYATHI TECHNOLOGIES PVT. LTD."]
+    },
   };
 
   render() {
@@ -128,11 +242,12 @@ class App extends Component {
         <Slider
           images={this.state.images}
           ScreenWidth={window.innerWidth}
-          ScreenHeight={window.innerHeight/1.25}
+          ScreenHeight={window.innerHeight / 1.25}
         />
         <Services services={this.state.services} />
         <Categories categories={this.state.categories} />
         <Blog blogs={this.state.blogs} />
+        <Footer footer={this.state.footer} />
       </React.Fragment>
     );
   }

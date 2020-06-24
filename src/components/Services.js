@@ -20,9 +20,9 @@ function Services(props) {
           />
           <Card.Title style={{fontSize:'1.5em',}}>{title}</Card.Title>
           </div>
-          <Card.Text className="ServicesCardText">
+          <div className="ServicesCardText">
             {desc}
-          </Card.Text>
+          </div>
         </Card.Body>
       </Card>
     </div>

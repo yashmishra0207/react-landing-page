@@ -4,10 +4,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
 function Blog(props) {
-  const blogCard = (image, name, date, review) => (
-    <Card style={{ width: "18rem", boxShadow: "0 2px 6px #555, 0 -4px orange" }} className="mx-auto mt-5 mb-3">
+  const blogCard = (image, name, date, review, idx) => (
+    <Card key={idx} style={{ width: "18rem", boxShadow: "0 2px 6px #555, 0 -4px orange" }} className="mx-auto mt-5 mb-3">
       <img
         src={image}
+        alt="Blog Writer"
         className="mx-auto"
         style={{ width: "5rem", height: "5rem", position: "absolute", left: "calc(50% - 2.5rem)", top: "calc(-2.5rem)" }}
       />
@@ -38,13 +39,13 @@ function Blog(props) {
             borderRadius: "50px 50px",
           }}
         >
-          CATEGORIES
+          BLOGS
         </span>
       </div>
       <Container>
         <Row>
           {props.blogs.map((blog, index) =>
-            blogCard(blog.userImg, blog.userName, blog.date, blog.review)
+            blogCard(blog.userImg, blog.userName, blog.date, blog.review, index)
           )}
         </Row>
       </Container>

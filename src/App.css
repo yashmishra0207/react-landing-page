@@ -1,6 +1,15 @@
 html {
   font-size: calc(0.65em + 1vmin);
 }
+
+.NavbarCustomElement {
+  transition: all 0.3s linear;
+}
+.NavbarCustomElement:hover {
+  color: dodgerblue !important;
+  transition: all 0.3s linear;
+}
+
 /* FOR SERVICE COMPONENT */
 .ServicesCard {
   display: flex;
@@ -104,4 +113,20 @@ html {
 	100% {
 		transform: rotate(1turn);
 	}
+}
+.SocialMediaIcon {
+  transition: all 0.3s linear;
+}
+.SocialMediaIcon:hover {
+  color: darkorange;
+  transition: all 0.3s linear;
+  animation: spin 0.3s linear forwards;
+}
+@keyframes spin {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.3) rotate(360deg);
+  }
 }
