@@ -5,9 +5,9 @@ import Row from "react-bootstrap/Row";
 
 function Categories(props) {
   const card = (icon, image, theme, title, desc, idx) => (
-    <div className="rainbow my-3">
+    <div className="rainbow my-3" key={idx}>
       <Card
-        className="ServiceCard mx-auto"
+        className="mx-auto"
         key={idx}
         style={{
           width: "18rem",
@@ -55,7 +55,7 @@ function Categories(props) {
           }}
         >
           <Card.Text
-            className="ServiceCardText"
+            className="CategoryCardText"
             style={{
               textAlign: "justify",
               color: theme,
@@ -76,7 +76,6 @@ function Categories(props) {
       className="pb-5"
       style={{
         backgroundColor: "#2c3e50",
-        backgroundBlendMode: "darken",
       }}
     >
       <div className="text-center pt-5 pb-5">
@@ -95,13 +94,13 @@ function Categories(props) {
       </div>
       <Container>
         <Row>
-          {props.categories.map((service, index) =>
+          {props.categories.map((category, index) =>
             card(
-              service.icon,
-              service.image,
-              service.theme,
-              service.title,
-              service.desc,
+              category.icon,
+              category.image,
+              category.theme,
+              category.title,
+              category.desc,
               index
             )
           )}

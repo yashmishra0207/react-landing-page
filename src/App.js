@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Navigator from "./components/Navbar";
 import Slider from "./components/Corousel";
+import Services from "./components/Services";
 import Categories from "./components/Categories";
 
 class App extends Component {
@@ -18,24 +19,24 @@ class App extends Component {
     ],
     services: [
       {
-        icon: "fa fa-code-fork fa-github",
-        theme: "",
-        title: "Software"
+        icon: "fa fa-code",
+        title: "Software",
+        desc: [<div key="1"><i className="fa fa-laptop" style={{fontSize:'24px'}}/><br/>Web Apps<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-paint-brush" style={{fontSize:'26px'}}/><br/>Graphic Designing<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-mobile" style={{fontSize:'26px'}}/><br/>Mobile Apps</div>]
       },
       {
-        icon: "fa fa-bullhorn fa-feed fa-line-chart",
-        theme: "",
-        title: "Marketing"
+        icon: "fa fa-line-chart",
+        title: "Marketing",
+        desc: [<div key="1"><i className="fa fa-search" style={{fontSize:'22px'}}/><br/>S.E.O.<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-envelope" style={{fontSize:'20px'}}/><br/>Email Marketting<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-bar-chart" style={{fontSize:'26px'}}/><br/>Analytics</div>]
       },
       {
-        icon: "fa fa-soundcloud fa-database",
-        theme: "",
-        title: "Cloud"
+        icon: "fa fa-soundcloud",
+        title: "Cloud",
+        desc: [<div key="1"><i className="fa fa-server" style={{fontSize:'22px'}}/><br/>Server<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-database" style={{fontSize:'20px'}}/><br/>Database<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-hdd-o" style={{fontSize:'26px'}}/><br/>Storage</div>]
       },
       {
-        icon: "fa fa-lightbulb-o",
-        theme: "",
-        title: "IOT"
+        icon: "fa fa-lightbulb-o fa-microchip",
+        title: "IOT",
+        desc: [<div key="1"><i className="fa fa-shield" style={{fontSize:'22px'}}/><br/>Security<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-medkit" style={{fontSize:'20px'}}/><br/>Health Care<hr style={{height:'0.5px', backgroundColor:'whitesmoke', border:'none'}}/><i className="fa fa-car" style={{fontSize:'24px'}}/><br/>Automotive</div>]
       },
     ],
     categories: [
@@ -106,8 +107,9 @@ class App extends Component {
         <Slider
           images={this.state.images}
           ScreenWidth={window.innerWidth}
-          ScreenHeight={window.innerHeight / 2}
+          ScreenHeight={window.innerHeight/1.25}
         />
+        <Services services={this.state.services} />
         <Categories categories={this.state.categories} />
       </React.Fragment>
     );

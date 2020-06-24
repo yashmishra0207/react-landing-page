@@ -8,7 +8,7 @@ function Slider(props) {
         <Carousel.Item key={index}>
           <img
           className="d-block w-100 img-responsive"
-          src={"https://source.unsplash.com/random/"+props.ScreenWidth+"x500/?"+item}
+          src={"https://source.unsplash.com/random/"+props.ScreenWidth+"x"+props.ScreenHeight+"/?"+item}
           alt="First slide"
         />
         </Carousel.Item>
