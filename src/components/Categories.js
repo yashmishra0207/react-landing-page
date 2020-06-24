@@ -49,6 +49,7 @@ function Categories(props) {
             borderRadius: "8px",
             background: "url(" + image + ")",
             backgroundSize: "cover",
+            backgroundPosition: "center",
             position: "relative",
             top: "2em",
           }}

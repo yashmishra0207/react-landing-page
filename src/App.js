@@ -39,7 +39,7 @@ class App extends Component {
         icon: "fa fa-users",
         image:
           "https://images.unsplash.com/photo-1571677246347-5040036b95cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        theme: "rgb(255,165,15)",
+        theme: "#ff1744",
         title: "Digital Marketing",
         desc:
           "A successful digital product doesn’t end with launch. You need users to find it, use it, and love it. We are experts in Agile and Insight-driven Marketing. We work with you to create high quality, efficient and effective strategies that will result in conversion, retention, and acquisition. We provide marketing automation as well.",
@@ -47,8 +47,8 @@ class App extends Component {
       {
         icon: "fa fa-paint-brush",
         image:
-          "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        theme: "#D500F9",
+          "https://images.unsplash.com/photo-1551541566-6e5ef6aaec15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        theme: "rgb(255,165,15)",
         title: "Product Design",
         desc:
           "Our customer-centric approach where our Visual UI is supported by UX strategy achieves best in Industry results that are not only visually appealing but also uniquely express your brand and drive customer engagement. Putting your customers at the heart of the design process results in products they will turn into again and again.",
@@ -56,7 +56,7 @@ class App extends Component {
       {
         icon: "fa fa-cloud",
         image:
-          "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80",
         theme: "rgb(0,128,255)",
         title: "Cloud Computing",
         desc:
@@ -65,8 +65,8 @@ class App extends Component {
       {
         icon: "fa fa-microchip",
         image:
-          "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        theme: "#ff1744",
+          "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
+        theme: "#009688",
         title: "Internet of things",
         desc:
           "Our customer-centric approach where our Visual UI is supported by UX strategy achieves best in Industry results that are not only visually appealing but also uniquely express your brand and drive customer engagement. Putting your customers at the heart of the design process results in products they will turn into again and again.",
