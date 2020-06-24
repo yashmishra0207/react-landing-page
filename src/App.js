@@ -95,6 +95,26 @@ class App extends Component {
           "Our Approach is structured around the emergence of an IoT ecosystem which helps in connections of things, data, process and people. A structured approach is taken to understand your business needs & offer quick ramp-up to discover your IoT needs & solutions, accelerating your time to market with low risk and zero lock-in.",
       },
     ],
+    blogs: [
+      {
+        userImg: "/avatars/avatar-1.png",
+        userName: "Peter Parker",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor, tellus sit amet eleifend lacinia, lorem quam vestibulum sem, non eleifend odio odio ac risus. Mauris efficitur gravida purus, nec tristique augue sagittis tincidunt. Ut neque elit, elementum at venenatis. ",
+        date: "10 August 2019"
+      },
+      {
+        userImg: "/avatars/avatar-2.png",
+        userName: "Arthur Curry",
+        review: "Spicy jalapeno bacon ipsum dolor amet jerky venison salami pork loin pancetta turducken cupim buffalo pork biltong beef ribeye kevin. Fatback tri-tip beef ribs, picanha beef short loin filet mignon swine andouille jowl capicola shoulder. Pork chop pancetta beef ribs, pork belly tongue.",
+        date: "29 January 2019"
+      },
+      {
+        userImg: "/avatars/avatar-4.png",
+        userName: "Bruse Banner",
+        review: "hase mice run in circles yet mark territory sleep on keyboard. Claw drapes. Intently sniff hand burrow under covers for behind the couch but inspect anything brought into the house. Intently stare at the same spot flop over or give attitude or hide when guests come over yet hide when.",
+        date: "02 July 2019"
+      },
+    ],
   };
 
   render() {
@@ -111,6 +131,7 @@ class App extends Component {
         />
         <Services services={this.state.services} />
         <Categories categories={this.state.categories} />
+        <Blog blogs={this.state.blogs} />
       </React.Fragment>
     );
   }
