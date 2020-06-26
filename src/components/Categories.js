@@ -72,6 +72,7 @@ function Categories(props) {
 
   return (
     <div
+      id="categoriesDiv"
       className="pb-5"
       style={{
         backgroundColor: "#2c3e50",

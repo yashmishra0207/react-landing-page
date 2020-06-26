@@ -1,13 +1,45 @@
+/* I USED THIS FOR STYLING BECAUSE RIGHT NOW I
+   AM PRETTY NEW TO STYLING WITH RADIUM,
+   STYLED COMPONENETS OR CSS MODULES AND I DON'T
+   RUN OUT OF TIME WHILE USING THESE FEATURES */
+
 html {
   font-size: calc(0.65em + 1vmin);
+  scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-button {
+  height: 0px;
+  background: rgb(35,35,35)
+}
+::-webkit-scrollbar-track-piece {
+  border-radius: 8px 8px;
+  background: rgb(35,35,35)
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px 8px;
+  background: darkorange
+}
+#navbarDiv{
+  transition: all 0.3s linear;
+}
 .NavbarCustomElement {
   transition: all 0.3s linear;
 }
 .NavbarCustomElement:hover {
-  color: dodgerblue !important;
+  color: darkorange !important;
   transition: all 0.3s linear;
+  animation: toandfro 0.3s linear;
+}
+@keyframes toandfro {
+  0% {transform: translateX(-10px);}
+  25% {transform: translateX(10px);}
+  50% {transform: translateX(-10px);}
+  75% {transform: translateX(10px);}
+  100% {transform: translate(-10px);}
 }
 
 /* FOR SERVICE COMPONENT */

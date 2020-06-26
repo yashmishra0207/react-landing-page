@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import Loader from 'react-loader-spinner';
 import Navigator from "./components/Navbar";
 import Slider from "./components/Corousel";
 import Services from "./components/Services";
@@ -9,6 +11,7 @@ import Footer from "./components/Footer";
 
 class App extends Component {
   state = {
+    loaderIsVisible: true,
     totalItems: "5",
     userName: "Allen",
     images: [
@@ -227,28 +230,48 @@ class App extends Component {
     footer: {
       address:
         "Frank G. Wells Building 2nd Floor 500 South Buena Vista Street, Burbank, California , United States",
-      socialMedia: [{ icon: "fa fa-google-plus-square", link: "https://aboutme.google.com" }, { icon: "fa fa-twitter-square", link: "https://twitter.com" },{ icon: "fa fa-linkedin-square", link: "https://linkedin.com" }, { icon: "fa fa-facebook-square", link: "https://facebook.com" }, { icon: "fa fa-instagram", link: "https://instagram.com" }],
+      socialMedia: [{ icon: "fa fa-google-plus-square", link: "https://aboutme.google.com" }, { icon: "fa fa-twitter-square", link: "https://twitter.com" },{ icon: "fa fa-linkedin-square", link: "https://linkedin.com/in/yashmishra0207" }, { icon: "fa fa-facebook-square", link: "https://facebook.com" }, { icon: "fa fa-instagram", link: "https://instagram.com/yashmishra0207" }],
       copyright: [<i className="fa fa-copyright" style={{fontSize:"0.75em"}}/>, " 2019 HYATHI TECHNOLOGIES PVT. LTD."]
     },
   };
 
+  setSpinner(state) {
+    this.setState({loaderIsVisible: state})
+  }
+  componentDidMount() {
+    this.setState({loaderIsVisible: false})
+  }
+
   render() {
-    return (
+    const loader = (
+      <Loader
+         type="Puff"
+         color="#00BFFF"
+         height={100}
+         width={100}
+         timeout={30000}
+      />
+    )
+    const toBeRendered = (
       <React.Fragment>
-        <Navigator
-          TotalItems={this.state.totalItems}
-          UserName={this.state.userName}
-        />
-        <Slider
-          images={this.state.images}
-          ScreenWidth={window.innerWidth}
-          ScreenHeight={window.innerHeight / 1.25}
-        />
-        <Services services={this.state.services} />
-        <Categories categories={this.state.categories} />
-        <Blog blogs={this.state.blogs} />
-        <Footer footer={this.state.footer} />
+            <Navigator
+              TotalItems={this.state.totalItems}
+              UserName={this.state.userName}
+            />
+            <Slider
+              images={this.state.images}
+              ScreenWidth={window.innerWidth}
+              ScreenHeight={window.innerHeight / 1.25}
+            />
+            <Services services={this.state.services} />
+            <Categories categories={this.state.categories} />
+            <Blog blogs={this.state.blogs} />
+            <Footer footer={this.state.footer} />
       </React.Fragment>
+    );
+    console.log(this.state.loaderIsVisible)
+    return (
+        this.state.loaderIsVisible ? loader : toBeRendered
     );
   }
 }

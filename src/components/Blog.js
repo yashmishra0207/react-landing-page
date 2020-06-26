@@ -24,6 +24,7 @@ function Blog(props) {
 
   return (
     <div
+      id="blogsDiv"
       className="pb-5"
       style={{
         backgroundColor: "#3498db",
